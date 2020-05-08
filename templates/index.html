@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block body %}
+  
+<div class="jumbotron text-center">
+    <h3>Yazılım Bilimi Bloguna Hoş Geldiniz</h3>
+    <p>Herkese merhaba. Burası İndex</p>
+</div>
+
+<ul>
+{% for i in numbers  %}
+    <li>Numbers: {{i}}</li>
+{% endfor %}
+</ul>
+
+{% endblock body %}
